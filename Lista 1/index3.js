@@ -1,6 +1,5 @@
 //Faça um programa que calcule a área de um quadrado. Formula: área = Lado x Lado
 
-
 const input = readline()
 
 const ladoQuadrado = parseFloat(input('Digite o tamanho do lado do quadrado: '))
