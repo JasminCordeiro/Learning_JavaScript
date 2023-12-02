@@ -1,3 +1,14 @@
+//Faça um Programa que pergunte quanto você ganha por hora e o número de
+//horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido
+//mês, sabendo-se que são descontados 15% para o Imposto de Renda, 10%
+//para o INSS e 2% para o sindicato, faca um programa que informe:
+//. O salário bruto.
+//. Quantia paga ao INSS.
+//. Quantia para o sindicato.
+//. Quantia para o imposto de renda
+//. O salário líquido.
+//  Dica: Porcentagem em javaScript: const desconto = salário * 0.15, onde 0.15 equivale a 15%.
+
 const readline = require ('prompt-sync')
 const input = readline()
 const lucro = parseFloat(input('Digite a quanto você ganha por hora: '))
