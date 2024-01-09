@@ -1,0 +1,2 @@
+eTemperaturas[i]);
+    }
