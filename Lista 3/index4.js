@@ -5,15 +5,28 @@
 // 4. Crie um novo vetor contendo todos os números ímpares do vetor original. 
 // 5. Imprima o somatório dos números ímpares no novo vetor. 
 
+const tamVetor = 50;
+let vetAleatorio = [];
 
-let vetAlet = [];
-
-for(let i = 0; i < 50; i++){
-    
-    vetAlet.push(Math.floor(Math.random() * 50 ));
+function randomNumbers(min, max){
+    return Math.floor(Math.random() *(max - min + 1)) + min;
 }
 
+for( let i = 0; i < tamVetor; i++){
+    let newNumber;
 
-console.log(vetAlet);
- 
- 
+    do{
+        newNumber = randomNumbers(1,100);
+    }while(vetAleatorio.includes(newNumber));
+
+    vetAleatorio.push(newNumber);
+}
+
+console.log(vetAleatorio);
+
+const tryInclude = tamVetor - vetAleatorio.length;
+console.log("Tentativas de inserção sem sucesso:", tryInclude);
+
+const somaImpares = vetAleatorio.filter(num => num % 2 !== 0).reduce((acumulador, num) => acumulador + num, 0);
+
+console.log("Soma dos valores ímpares:", somaImpares);

@@ -5,9 +5,9 @@ const vetor = [2,2,2,6,2,4,1,1,1,1]
 const valorpar = [];
 let result = 0;
 
-for(let i in vetor){
-    if(vetor[i] % 2 === 0 ){
-        valorpar.push(vetor[i]);
+ for(let i in vetor){
+     if(vetor[i] % 2 === 0 ){
+         valorpar.push(vetor[i]);
     }
 }
 
